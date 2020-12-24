@@ -1,5 +1,5 @@
-from Tkinter import *
+from tkinter import *
 
 root = Tk()
-label(root, text='Hello World').pack()
+Label(root, text='Hello World').pack()
 root.mainloop()
