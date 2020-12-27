@@ -5,9 +5,10 @@ from converters import *
 class App:
 
 	def __init__(self, master):
+		self.t_conv = ScaleAndOffsetConverter('C', 'F', 1.8, 32)
 		frame = Frame(master)
 		frame.pack()
-		Label(frame, text='deg c').grid(row = 0, column = 0)
+		Label(frame, text='deg C').grid(row = 0, column = 0)
 		self.c_var = DoubleVar()
 		Entry(frame, textvariable=self.c_var).grid(row = 0, column = 1)
 		Label(frame, text='deg F').grid(row = 1, column = 0)
